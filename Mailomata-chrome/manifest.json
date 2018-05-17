@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Google Mailomata",
+    "description": "Google Mailomata",
+    "version": "1.0",    
+    "permissions": ["tabs", "<all_urls>"],  
+"content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+
+    "browser_action": { 
+		"default_icon": {
+			"19": "images/icons/google.png",
+			"38": "images/icons/google.png"
+		},
+        "default_popup": "popup.html"  
+    },
+	 "content_scripts": [{
+
+    "js": ["jquery-3.2.1.min.js"],
+    "matches": ["<all_urls>"]
+  }],
+
+
+	"icons": {
+		"16": "images/icons/google.png",
+		"19": "images/icons/google.png",
+		"38": "images/icons/google.png",
+		"64": "images/icons/google.png",
+		"128": "images/icons/google.png"
+	}
+}
